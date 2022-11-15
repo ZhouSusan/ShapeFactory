@@ -3,12 +3,12 @@ import base.ShapeBase;
 
 public class Rectangle extends ShapeBase {
 
-    public Rectangle(String name, int width, int height) {
+    public Rectangle(String name, double width, double height) {
         super(name, width, height);
     }
 
     @Override
-    public int calculateArea() {
+    public double calculateArea() {
         return height * width;
     }
 }

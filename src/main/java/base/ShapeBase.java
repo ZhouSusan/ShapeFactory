@@ -2,9 +2,9 @@ package base;
 
 public class ShapeBase implements ShapeInterface{
     protected String name;
-    protected int width, height;
+    protected double width, height;
 
-    public ShapeBase(String name, int width, int height) {
+    public ShapeBase(String name, double width, double height) {
         super();
         this.name = name;
         this.width = width;
@@ -19,24 +19,24 @@ public class ShapeBase implements ShapeInterface{
         return name;
     }
 
-    public void setWidth(int w) {
+    public void setWidth(double w) {
         this.width = w;
     }
 
-    public int getWidth() {
+    public double getWidth() {
         return width;
     }
 
-    public void setHeight(int h) {
+    public void setHeight(double h) {
         this.height = h;
     }
 
-    public int getHeight() {
+    public double getHeight() {
         return height;
     }
 
     @Override
-    public int calculateArea() {
+    public double calculateArea() {
         return 0;
     }
 }

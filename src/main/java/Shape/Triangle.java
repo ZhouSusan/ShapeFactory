@@ -3,12 +3,12 @@ import base.ShapeBase;
 
 public class Triangle extends ShapeBase{
 
-    public Triangle(String name, int width, int height) {
+    public Triangle(String name, double width, double height) {
         super(name, width, height);
     }
 
     @Override
-    public int calculateArea() {
+    public double calculateArea() {
         return width * height /2;
     }
 }
