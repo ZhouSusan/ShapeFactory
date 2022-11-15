@@ -4,9 +4,11 @@ public class ShapeBase implements ShapeInterface{
     protected String name;
     protected int width, height;
 
-    @Override
-    public int calculateArea() {
-        return 0;
+    public ShapeBase(String name, int width, int height) {
+        super();
+        this.name = name;
+        this.width = width;
+        this.height = height;
     }
 
     public void setName(String n) {
@@ -31,5 +33,10 @@ public class ShapeBase implements ShapeInterface{
 
     public int getHeight() {
         return height;
+    }
+
+    @Override
+    public int calculateArea() {
+        return 0;
     }
 }
